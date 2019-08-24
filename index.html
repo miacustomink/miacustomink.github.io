@@ -67,7 +67,7 @@
         background-color: #1EAEDB;
         border-color: #1EAEDB; }
 
-        .latest{
+        /* .latest{
             display:flex; 
             flex-direction: row; 
             flex-wrap: wrap; 
@@ -81,30 +81,21 @@
             margin: 2em;
             border: 2px solid #000000;
         }
-        
+         */
 
     </style>
 
 <link rel="shortcut icon" href="src/img/favicon.ico" />
-<!-- Core CSS file -->
 <link rel="stylesheet" href="src/styles/photoswipe.css"> 
-
-<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
-     In the folder of skin CSS file there are also:
-     - .png and .svg icons sprite, 
-     - preloader.gif (for browsers that do not support CSS animations) -->
 <link rel="stylesheet" href="src/styles/default-skin/default-skin.css"> 
 
-<!-- Core JS file -->
 <script src="src/scripts/photoswipe.min.js"></script> 
-
-<!-- UI JS file -->
 <script src="src/scripts/photoswipe-ui-default.min.js"></script> 
    
 </head>
 <body>
   
-  <header style="display:flex; flex-direction: column; justify-content: center;">
+<header style="display:flex; flex-direction: column; justify-content: center;">
 
     <h1 style='font-family: "Oswald", cursive; text-align: center; margin-bottom:1px'>MIA CUSTOM INK<br><i><small>tattoos by mia k</small></i></h1>
     <div style="display:flex; flex-direction: row; justify-content: center;">
@@ -113,126 +104,119 @@
         <a href='#book' class='button button-primary'>BOOK NOW</a>
     </div>
    
-    </header>
+</header>
 
 
-    <div id="demo-test-gallery" class="demo-gallery" style="width:100%; padding: 0 5%" >
+<div class="row demo-gallery" >
+    <div class="column">
 
-<div style="width: 50%; float: left;">
-        <a href="src/img/ink/1v.jpg" data-size="1080x1080" data-med="src/img/ink/1v.jpg" data-med-size="1080x1080" data-author="Mia Koumaris" class="demo-gallery__img--main">
-            <img src="src/img/ink/1v.jpg" style="height:405px" />
+        <a href="src/img/ink/1.jpg" data-size="1080x1080" data-med="src/img/ink/1.jpg" data-med-size="1080x1080" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/1.jpg"  />
             <figure>Photo: Mia Koumaris</figure>
         </a>
-            <a href="src/img/ink/3.jpg" data-size="960x960" data-med="src/img/ink/3.jpg" data-med-size="960x960" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                <img src="src/img/ink/3.jpg" style="width:195px" />
-                <figure>Photo: Mia Koumaris</figure>
-            </a>
-            <a href="src/img/ink/3c.jpg" data-size="1272x1272" data-med="src/img/ink/3c.jpg" data-med-size="960x960" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                <img src="src/img/ink/3c.jpg" style="width:195px" />
-                <figure>Photo: Mia Koumaris</figure>
-            </a>
 
-        </div>
-        
-
-        <div style="width: 50%; float: right;">
-                <a href="src/img/ink/3b.jpg" data-size="954x1272" data-med="src/img/ink/3b.jpg" data-med-size="954x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                    <img src="src/img/ink/3b.jpg" style="height:405px" />
-                    <figure>Photo: Mia Koumaris</figure>
-                </a>
-        
-                <a href="src/img/ink/4.jpg" data-size="1272x1272" data-med="src/img/ink/4.jpg" data-med-size="1272x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                    <img src="src/img/ink/4.jpg" style="width:195px" />
-                </a>
-            <a href="src/img/ink/5.jpg" data-size="685x685" data-med="src/img/ink/5.jpg" data-med-size="685x685" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                <img src="src/img/ink/5.jpg" style="width:195px" />
-                <figure>Photo: Mia Koumaris</figure>
-            </a>
-        </div>
-
-        <div style="width: 50%; float: left;">
-                <a href="src/img/ink/6.jpg" data-size="2976x3968" data-med="src/img/ink/6.jpg" data-med-size="2976x3968" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                    <img src="src/img/ink/6.jpg" style="width:146px" />
-                    <figure>Photo: Mia Koumaris</figure>
-                </a>
-        <a href="src/img/ink/1.jpg" data-size="1370x1370" data-med="src/img/ink/1.jpg" data-med-size="1370x1370" data-author="Mia Koumaris" class="demo-gallery__img--main">
-            <img src="src/img/ink/1.jpg" style="width:195px" />
+        <a href="src/img/ink/2.jpg" data-size="1068x1424" data-med="src/img/ink/2.jpg" data-med-size="1068x1424" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/2.jpg" />
             <figure>Photo: Mia Koumaris</figure>
         </a>
-    
-        <a href="src/img/ink/5a.jpg" data-size="1272x1272" data-med="src/img/ink/5a.jpg" data-med-size="1272x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
-            <img src="src/img/ink/5a.jpg" style="width:195px" />
+
+        <a href="src/img/ink/3.jpg" data-size="1080x1080" data-med="src/img/ink/3.jpg" data-med-size="1080x1080" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/3.jpg"  />
             <figure>Photo: Mia Koumaris</figure>
         </a>
  
-        </div>
+        <a href="src/img/ink/4.jpg" data-size="1080x1080" data-med="src/img/ink/4.jpg" data-med-size="1080x1080" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/4.jpg"  />
+            <figure>Photo: Mia Koumaris</figure>
+        </a>
 
-        <div style="width: 50%; float: right;">
-                <a href="src/img/ink/7.jpg" data-size="954x1272" data-med="src/img/ink/7.jpg" data-med-size="954x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                    <img src="src/img/ink/7.jpg" style="height:195px" />
-                    <figure>Photo: Mia Koumaris</figure>
-                </a>
-        
-                <a href="src/img/ink/7a.jpg" data-size="1235x1272" data-med="src/img/ink/7a.jpg" data-med-size="1235x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                    <img src="src/img/ink/7a.jpg" style="width:195px" />
-                    <figure>Photo: Mia Koumaris</figure>
-                </a>
-            <a href="src/img/ink/8.jpg" data-size="1080x1080" data-med="src/img/ink/8.jpg" data-med-size="1080x1080" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                <img src="src/img/ink/8.jpg" style="width:195px" />
+        <a href="src/img/ink/5.jpg" data-size="1272x1272" data-med="src/img/ink/5.jpg" data-med-size="1272x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/5.jpg"  />
+            <figure>Photo: Mia Koumaris</figure>
+        </a>
+
+        <a href="src/img/ink/6.jpg" data-size="1272x1272" data-med="src/img/ink/6.jpg" data-med-size="1272x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/6.jpg" />
+        </a>
+
+    </div>
+
+    <div class="column">
+
+        <a href="src/img/ink/7.jpg" data-size="840x907" data-med="src/img/ink/7.jpg" data-med-size="840x907" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/7.jpg"  />
+            <figure>Photo: Mia Koumaris</figure>
+        </a>
+
+        <a href="src/img/ink/8.jpg" data-size="1272x1272" data-med="src/img/ink/8.jpg" data-med-size="1272x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/8.jpg"  />
+            <figure>Photo: Mia Koumaris</figure>
+        </a>
+
+        <a href="src/img/ink/9.jpg" data-size="954x1272" data-med="src/img/ink/9.jpg" data-med-size="954x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/9.jpg" />
+            <figure>Photo: Mia Koumaris</figure>
+        </a>
+    
+        <a href="src/img/ink/10.jpg" data-size="1272x1272" data-med="src/img/ink/10.jpg" data-med-size="1272x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/10.jpg"  />
+            <figure>Photo: Mia Koumaris</figure>
+        </a>
+
+        <a href="src/img/ink/11.jpg" data-size="685x685" data-med="src/img/ink/11.jpg" data-med-size="685x685" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/11.jpg"  />
+            <figure>Photo: Mia Koumaris</figure>
+        </a>
+
+
+    </div>
+
+    <div class="column">
+         
+        <a href="src/img/ink/12.jpg" data-size="1235x1272" data-med="src/img/ink/12.jpg" data-med-size="1235x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/12.jpg"  />
                 <figure>Photo: Mia Koumaris</figure>
-            </a>
-            </div>
-<!-- 
-            <div style="width: 50%; float: left;">
-                    <a href="src/img/ink/9.jpg" data-size="1068x1424" data-med="src/img/ink/9.jpg" data-med-size="1068x1424" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                        <img src="src/img/ink/9.jpg" style="height:405px" />
-                         <figure>Photo: Mia Koumaris</figure>
-                    </a>
-                        <a href="src/img/ink/10.jpg" data-size="1272x1272" data-med="src/img/ink/10.jpg" data-med-size="1272x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                            <img src="src/img/ink/10.jpg" style="width:195px" />
-                             <figure>Photo: Mia Koumaris</figure>
-                        </a>
-                        <a href="src/img/ink/11.jpg" data-size="1272x1272" data-med="src/img/ink/11.jpg" data-med-size="1272x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                            <img src="src/img/ink/11.jpg" style="width:195px" />
-                             <figure>Photo: Mia Koumaris</figure>
-                        </a>
-            
-                    </div>
-                    
-            
-                    <div style="width: 50%; float: right;">
-                            <a href="src/img/ink/15.jpg" data-size="1273x1272" data-med="src/img/ink/15.jpg" data-med-size="1273x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
-                                <img src="src/img/ink/15.jpg" style="height:405px" />
-                            </a>
-                    
+        </a>
 
-                    </div> -->
-      </div>
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <a href="src/img/ink/13.jpg" data-size="960x960" data-med="src/img/ink/13.jpg" data-med-size="960x960" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/13.jpg" />
+                <figure>Photo: Mia Koumaris</figure>
+        </a>
+
+        <a href="src/img/ink/14.jpg" data-size="1116x1488" data-med="src/img/ink/14.jpg" data-med-size="1116x1488" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/14.jpg" />
+        </a>
+
+        <a href="src/img/ink/15.jpg" data-size="1272x1272" data-med="src/img/ink/15.jpg" data-med-size="1272x1272" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/15.jpg"  />
+            <figure>Photo: Mia Koumaris</figure>
+        </a>
+
+        <a href="src/img/ink/16.jpg" data-size="954x1272" data-med="src/img/ink/16.jpg" data-med-size="1370x1370" data-author="Mia Koumaris" class="demo-gallery__img--main">
+            <img src="src/img/thumbs/16.jpg" />
+            <figure>Photo: Mia Koumaris</figure>
+        </a>
+
+    </div>
+</div>
+  
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
+
     <div class="pswp__bg"></div>
 
-    <!-- Slides wrapper with overflow:hidden. -->
     <div class="pswp__scroll-wrap">
 
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
+     
         <div class="pswp__container">
             <div class="pswp__item"></div>
             <div class="pswp__item"></div>
             <div class="pswp__item"></div>
         </div>
 
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
         <div class="pswp__ui pswp__ui--hidden">
 
             <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
 
                 <div class="pswp__counter"></div>
 
@@ -288,36 +272,6 @@
 
 </body>
 <script>
-
-
-
-// var pswpElement = document.querySelectorAll('.jpg')[0];
-
-// // build items array
-// var items = [
-//     {
-//         src: 'https://placekitten.com/600/400',
-//         w: 600,
-//         h: 400
-//     },
-//     {
-//         src: 'https://placekitten.com/1200/900',
-//         w: 1200,
-//         h: 900
-//     }
-// ];
-
-// // define options (if needed)
-// var options = {
-//     // optionName: 'option value'
-//     // for example:
-//     index: 0 // start at first slide
-// };
-
-// // Initializes and opens PhotoSwipe
-// var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-// gallery.init();
-
 
 
 (function() {
@@ -596,6 +550,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
     };
 
     // select all gallery elements
+    var gallerySelector = ".column a"
     var galleryElements = document.querySelectorAll( gallerySelector );
     for(var i = 0, l = galleryElements.length; i < l; i++) {
         galleryElements[i].setAttribute('data-pswp-uid', i+1);
