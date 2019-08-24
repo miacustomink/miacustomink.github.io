@@ -436,9 +436,6 @@ html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, 
 figure {
   display: block;
 }
-html {
-  /*overflow-y: scroll;*/
-}
 
 a {
   color: #3169B3;
@@ -461,7 +458,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga", "kern";
+
 
 }
 
@@ -728,9 +725,10 @@ img {
 
 
 .video {
-  width: 100%%;
+  width: 100%;
   margin: 0 0 24px 0;
 }
+
 .video__container {
   position: relative;
   width: 100%;
@@ -906,13 +904,13 @@ p, ul.text-list {
   padding: 132px 0;
 }
 
-
+/* 
 .row {
   max-width: 800px;
   margin: 24px auto;
   padding: 0 30px;
   position: relative;
-}
+} */
 
 .row--docs {
   max-width: 960px;
@@ -963,13 +961,13 @@ img.img--with_border {
 
 
 /* clearfix */
-.row:after{
+/* .row:after{
   content: " "; 
    visibility: hidden;
    display: block;
    height: 0;
    clear: both;
-}
+} */
 .row--large {
   margin-bottom: 48px;
 }
@@ -1091,7 +1089,7 @@ img.img--with_border {
   /*color: rgba(255, 255, 255, 0.8);*/
 }
 .row--modules span {
-  font-wight:600;
+  font-weight:600;
   border-left:5px solid #FFF;
   padding-left:5px;
   margin-left:-10px;
@@ -1122,23 +1120,6 @@ img.img--with_border {
   float: right;
   max-width: 450px;
 }
-
-
-.demo-gallery {
-  width: 100%;
-  height: auto;
-  float: left;
-}
-.demo-gallery a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-touch-callout: none;
-  display: block;
-  float: left;
-  margin: 0 12px 12px 0;
-  width: 171px;
-  line-height: 0;
-}
-
 
 
 a.demo-gallery__img--main {
@@ -1279,9 +1260,7 @@ a.demo-gallery__img--main {
     width: 100%;
     margin-bottom: 12px;
   }
-  .row {
-    padding: 0 18px;
-  }
+  
   .docs .highlight,
   .codepen-embed {
     padding-left: 18px;
@@ -1313,7 +1292,7 @@ a.demo-gallery__img--main {
     line-height: 26px; 
   }
 
-  .demo-gallery {
+  /* .demo-gallery {
     max-width: 500px;
   }
   .demo-gallery a {
@@ -1327,7 +1306,7 @@ a.demo-gallery__img--main {
     font-size: 18px;
     line-height: 24px;
   }
-}
+} */
 
 /*@media screen and (max-width: 490px) {
   .demo-gallery a {
@@ -1339,29 +1318,64 @@ a.demo-gallery__img--main {
   }
 }
 */
+}
 
 
 @media screen and (max-width: 450px) {
-  .demo-gallery a {
+  /* .demo-gallery a {
     width: 95px;
     margin: 0 1px 1px 0;
   }
   a.demo-gallery__img--main {
     width: 127px;
   }
+} */
 }
 
-
 @media screen and (max-width: 350px) {
-  .demo-gallery a {
+  /* .demo-gallery a {
     width: 81px;
 margin: 0 1px 1px 0;
   }
   a.demo-gallery__img--main {
     width: 109px;
   }
+} */
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
 
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
 
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
